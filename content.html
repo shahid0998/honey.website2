@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Honey Haven</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      padding-top: 70px;
+    }
+    .navbar-custom {
+      background: linear-gradient(45deg, #1a1a1a, #262626);
+      box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+      padding: 0.5rem 1rem;
+      z-index: 1000;
+    }
+    .navbar-custom .nav-link {
+      color: #ffc107;
+      text-transform: uppercase;
+      font-weight: 700;
+      pointer-events: auto;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ffca2c;
+      text-shadow: 0 0 10px #ffc107;
+    }
+    .navbar-custom .nav-link.active {
+      color: #ffca2c;
+      text-decoration: underline;
+    }
+    .navbar-brand img {
+      height: 60px;
+      filter: drop-shadow(0 0 8px #ffc107) brightness(110%);
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .navbar-brand img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 12px #ffca2c) brightness(120%);
+    }
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      color: #ffc107;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #ffc107;
+      position: relative;
+    }
+    .section-title:after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: #ffc107;
+      box-shadow: 0 0 10px #ffc107;
+    }
+    .card-custom {
+      background-color: #1a1a1a;
+      border: 1px solid #ffc107;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+    }
+    .card-body {
+      background-color: #262626;
+    }
+    .bg-cyber {
+      background: linear-gradient(45deg, #262626, #333333);
+    }
+    .btn-cyber {
+      background-color: #ffc107;
+      border: none;
+      color: #0d0d0d;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .btn-cyber:hover {
+      background-color: #ffca2c;
+      box-shadow: 0 0 15px #ffc107;
+    }
+    .btn-outline-cyber {
+      border: 1px solid #ffc107;
+      color: #ffca2c;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .btn-outline-cyber:hover {
+      background-color: #ffc107;
+      color: #0d0d0d;
+      box-shadow: 0 0 15px #ffc107;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      background-color: #262626;
+      border: 1px solid #ffc107;
+      color: #e0e0e0;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      background-color: #333333;
+      border-color: #ffca2c;
+      box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+      color: #e0e0e0;
+    }
+    .contact-img {
+      border: 2px solid #ffc107;
+      border-radius: 10px;
+      filter: drop-shadow(0 0 10px #ffc107);
+    }
+    .social-icon {
+      color: #ffc107;
+      font-size: 1.5rem;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .social-icon:hover {
+      color: #ffca2c;
+      transform: scale(1.2);
+    }
+    @media (max-width: 767.98px) {
+      .navbar-brand img {
+        height: 45px;
+      }
+      .contact-img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="/logo 2-modified.png" alt="Honey Haven Logo">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Get in Touch with Honey Haven</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card card-custom h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Contact Us</h5>
+              <div class="contact-form">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn btn-cyber">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-custom h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-center">Reach Out</h5>
+              <div class="d-flex flex-column align-items-center mb-4">
+                <img src="/logo 2-modified.png" alt="Honey Haven Contact" class="contact-img img-fluid mb-3" style="max-width: 300px;">
+                <p class="text-center">We're here to answer your questions and share the sweetness of Kashmir honey!</p>
+              </div>
+              <div class="mt-auto">
+                <h6 class="text-warning">Contact Details</h6>
+                <p><strong>Email:</strong> shahidfirdous0998@gmail.com</p>
+                <p><strong>Phone:</strong> 7780841840</p>
+                <p><strong>Address:</strong> Chadoora, Budgam, Kashmir, India</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center" style="background: linear-gradient(45deg, #ffc107, #0c0c0c);">
+    <div class="container">
+      <h3 class="section-title mb-4">Ready to Experience the Taste of Pure Kashmir Honey?</h3>
+      <a href="products.html" class="btn btn-cyber btn-lg me-3">Shop Now</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+  <script>
+    // Initialize Tooltips
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  </script>
+</body>
+</html>
